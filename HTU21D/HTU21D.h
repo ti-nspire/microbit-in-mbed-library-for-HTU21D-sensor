@@ -13,6 +13,7 @@
 
 class HTU21D{
     public:
+        HTU21D();
         float readTemp(void);
         float readHumid(void);
         char  read_user_register(void);
@@ -21,4 +22,3 @@ class HTU21D{
     private:
         unsigned short check_crc(char msb, char lsb, char crc);
 };
-
