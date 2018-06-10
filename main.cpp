@@ -18,7 +18,6 @@ int main(void){
         float temp  = HTU.readTemp();
         float humid = HTU.readHumid();
         printf("%.1f C, %.1f %%\n", temp, humid);
-        printf("\n");
         
         wait(1.0);
     }
