@@ -3,6 +3,9 @@
 #include "MicroBit.h"
 MicroBitI2C i2c(I2C_SDA0, I2C_SCL0);
 
+HTU21D::HTU21D(){
+}
+
 unsigned short HTU21D::check_crc(char msb, char lsb, char crc){
     unsigned int divisor   = SHIFTED_DIVISOR;
     unsigned int remainder = msb<<16 | lsb<<8 | crc;
