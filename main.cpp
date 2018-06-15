@@ -8,11 +8,12 @@ int main(void){
     uBit.init();
     
     //HTU.softReset();
+    
+    //HTU.setResolution(RH12_TEMP14);
+    //HTU.setResolution(RH08_TEMP12);
+    //HTU.setResolution(RH10_TEMP13);
+    //HTU.setResolution(RH11_TEMP11);
     while(1){
-        //HTU.setResolution(RH12_TEMP14);
-        //HTU.setResolution(RH08_TEMP12);
-        //HTU.setResolution(RH10_TEMP13);
-        //HTU.setResolution(RH11_TEMP11);
         //printf("User Register: 0x%X\n", HTU.read_user_register());
         
         float temp  = HTU.readTemp();
